@@ -1,10 +1,14 @@
-public class Cliente extends Thread {
+public class Cliente{
 
     private String nombre;
+    private Transaccion[] transacciones;
     private long tiempoInicial;
 
-    @Override
-    public void run() {
-        System.out.println("Cliente pidiendo");
+    public String getNombre() {
+        return nombre;
+    }
+
+    public Transaccion[] getTransacciones() {
+        return transacciones;
     }
 }
