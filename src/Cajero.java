@@ -6,6 +6,11 @@ public class Cajero extends Thread {
     private Cliente cliente;
     private long tiempoInicial;
 
+    public Cajero(String nombre, Cliente cliente, long tiempoInicial){
+        this.nombre=nombre;
+        this.cliente=cliente;
+        this.tiempoInicial=tiempoInicial;
+    }
 
     @Override
     public void run(){
